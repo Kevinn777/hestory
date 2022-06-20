@@ -1,0 +1,144 @@
+section.recomended {
+	width: 80%;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 200px;
+	position: relative;
+	overflow: hidden;
+	h1 {
+		font-weight: normal;
+		font-size: 2em;
+		margin-bottom: 1rem;
+	}
+	.swiper-recomended {
+		width: 100%;
+		height: 100%;
+		.swiper-wrapper {
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				width: 100%;
+				height: 100%;
+				position: relative;
+
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				flex-direction: column;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+
+				.card-content {
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					align-items: flex-start;
+					width: 100%;
+					font-family: "Poppins";
+					color: #707070;
+					bottom: -85px;
+
+					.title {
+						font-size: 1.5em;
+					}
+
+					.category {
+						font-size: 1em;
+						font-weight: 200;
+					}
+
+					.rate {
+						width: 80%;
+						display: flex;
+						align-items: center;
+						gap: 1rem;
+						svg {
+							width: 25px;
+						}
+					}
+				}
+
+				.action {
+					position: absolute;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 90%;
+					a {
+						border-radius: 500px;
+						padding: 1rem;
+						background-color: #fff;
+						width: 50px;
+						height: 50px;
+						svg {
+							path {
+								fill: #000;
+							}
+						}
+					}
+
+					a:first-child {
+						svg {
+							width: 20%;
+							height: 20%;
+						}
+					}
+					a:last-child {
+						svg {
+							width: 15%;
+							height: 15%;
+						}
+					}
+					// opacity: 0;
+				}
+			}
+
+			.swiper-slide img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.swiper-button-next,
+		.swiper-button-prev {
+			position: absolute;
+			color: #926643;
+			bottom: 0;
+			// top: 0;
+		}
+
+		.swiper-button-next {
+			right: 5px;
+		}
+		.swiper-button-prev {
+			left: 5px;
+		}
+		.swiper-pagination-bullets {
+			bottom: 0;
+			position: inherit;
+		}
+		.swiper-pagination-bullet {
+			width: 7px;
+			height: 7px;
+			border-radius: 10px;
+		}
+		.swiper-pagination-bullet-active {
+			background-color: #926643;
+		}
+	}
+}
